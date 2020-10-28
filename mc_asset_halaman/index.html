@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <title>Yuk Design</title>
+    <link rel="stylesheet" href="./css/login.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="./materialize/css/materialize.min.css"  media="screen,projection"/>
+  </head>
+  <body class="transition">
+    <nav>
+      <div class="nav-wrapper blue">
+        <span class="brand-logo" style="margin: 0 10px;">Yuk Design</span>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a root="/home" href="#/">Home</a></li>
+          <li><a root="/galery" href="#/">Design</a></li>
+          <li><a root="/website" href="#/">Web Design</a></li>
+          <li><a root="/about" href="#/">About</a></li>
+          <li><a root="/home" href="#/">Contact</a></li>
+          <li><a root="/home" href="#/">Order</a></li>
+    </ul>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li><a root="/home" href="#/">Home</a></li>
+      <li><a root="/galery" href="#/">Design</a></li>
+      <li><a root="/website" href="#/">Web Design</a></li>
+      <li><a root="/about" href="#/">About</a></li>
+      <li><a root="/home" href="#/">Contact</a></li>
+      <li><a root="/home" href="#/">Order</a></li>
+    </ul>
+
+    <div id="root" class="row" style="margin-top: 10px;">
+    </div>
+    <!-- You can also require other files to run in this process -->
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="./materialize/js/materialize.min.js"></script>
+    <script src="./js/axios.min.js"></script>
+    <script src="./route.js"></script>
+    <script src="./route-config.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('.sidenav').sidenav();
+      });
+    </script>
+  </body>
+</html>

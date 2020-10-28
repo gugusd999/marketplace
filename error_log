@@ -1,0 +1,1 @@
+[01-Aug-2020 21:34:06 Asia/Jakarta] PHP Fatal error:  require_once(): Failed opening required 'vendor/mpdf.php' (include_path='.:/opt/alt/php71/usr/share/pear') in /home/yukdesig/public_html/sipintar/application/helpers/phpmailer_helper.php on line 14

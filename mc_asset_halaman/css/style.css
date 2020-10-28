@@ -1,0 +1,40 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.nav{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    padding: 8px 10px;
+    background-color: #ffffff;
+    color: #777;
+    height: 30px;
+}
+
+.nav > .navigation button.active{
+    border-bottom: 1px solid #333;
+}
+
+.nav > .navigation button:hover{
+    border-bottom: 1px solid #777;
+}
+
+.nav > .navigation{
+    text-align: right;
+}
+
+.nav > .navigation button{
+    outline: none;
+    border: none;
+    background: transparent;
+    color: #333;
+    margin: 0 10px;
+    padding-bottom: 10px;
+}
+
+.title{
+    font-size: 20px;
+}
